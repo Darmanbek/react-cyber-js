@@ -1,0 +1,45 @@
+    .form-item-img 
+    {
+        width: 150px;
+        height: 130px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer !important;
+    
+        .file-input 
+        {
+            position: absolute;
+            background-color: rgba(236, 242, 253, 0.8);
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            width: 100%;
+            border-radius: 10px;
+            height: 128px;
+            
+            z-index: 9;
+            cursor: pointer;
+            // transform: translateY(-40px);
+            input 
+            {
+                opacity: 0;
+            }
+        }
+    
+        .form-icon-upload
+        {
+            z-index: 10;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 40px;
+            color: rgb(121, 164, 244);
+        }
+    }

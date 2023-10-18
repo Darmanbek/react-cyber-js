@@ -1,0 +1,114 @@
+.header-items {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+    @media (max-width: 768px) {
+        & {
+            display: none;
+        }
+    }
+
+    &_block {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 0px;
+
+        li {
+            position: relative;
+
+            a {
+                display: block;
+                padding: 6px 15px;
+                border-radius: 10px;
+                font-size: 16px;
+                text-transform: capitalize;
+                color: #000;
+                opacity: 0.85;
+
+                &:hover,
+                &.active {
+                    background-color: #efefef;
+                }
+            }
+
+            .lang-btn {
+                background-color: royalblue;
+                padding: 7px 15px;
+                width: 110px;
+                border: none;
+                border-radius: 10px;
+                color: #fff;
+                font-size: 16px;
+                cursor: pointer;
+                transition: filter .3s;
+
+                &:hover
+                {
+                    filter: brightness(1.1);
+                }
+            }
+
+           
+
+            .lang_items {
+                position: absolute;
+                top: 110%;
+                left: 0px;
+                width: 100%;
+                background-color: #fff;
+                border-radius: 10px;
+                box-shadow: 0 0 12px rgba(0, 0, 0, .3);
+                transform-origin: top;
+                z-index: 1;
+                opacity: 0;
+                transform: scaleY(0);
+                overflow: hidden;
+                transition: transform .3s, opacity .4s;
+
+                &.active {
+                    transform: scaleY(1);
+                    opacity: 1;
+                }
+
+                li {
+                    
+                    cursor: pointer;
+                    button
+                    {
+                        font-size: 16px;
+                        padding: 5px 10px;
+                        cursor: pointer;
+                    }
+
+                    &:hover {
+                        background-color: #efefef;
+                    }
+                }
+            }
+        }
+    }
+
+    .login-btn {
+        background: linear-gradient(45deg, rgb(17, 82, 204), rgb(0, 0, 0));
+        padding: 7px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        border-radius: 10px;
+        border: none;
+        box-shadow: none;
+        transition: color .3s, filter .3s, transform .3s;
+        font-size: 16px;
+        cursor: pointer;
+
+        &:hover {
+            background: linear-gradient(45deg, rgb(17, 82, 204), rgb(0, 0, 0));
+            filter: brightness(1.1);
+            color: #fff;
+        }
+    }
+
+}

@@ -1,0 +1,115 @@
+.search
+{
+
+    @media (max-width: 768px) {
+        &
+        {
+            border-radius: 10px;
+            box-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    .search-inner
+    {
+        display: grid;
+        grid-template-columns: 6fr 3fr 1fr;
+        gap: 10px;
+        align-items: center;
+        padding: 50px 0;
+
+        @media (max-width: 768px) {
+            &
+            {
+                grid-template-columns: 9fr 1fr;
+                padding: 0;
+                padding-top: 5px;
+                padding-bottom: 10px;
+            }
+        }
+
+        &_input
+        {
+            height: 100%;
+            
+            span
+            {
+                border-radius: 10px;
+                padding: 5px;
+                height: 100%;
+            }
+
+            @media (max-width: 768px) {
+                &
+                {
+                    .ant-input-prefix
+                    {
+                        display: none;
+                    }
+                }
+            }
+            
+        }
+
+        &_input_city
+        {
+            
+            span
+            {
+                border-radius: 10px;
+                padding: 5px;
+            }
+
+            @media (max-width: 768px) {
+                &
+                {
+                    display: none;
+                }
+            }
+        }
+
+        button
+        {
+            background-color: #1152cc;
+            color: #fff;
+            font-size: medium;
+            border: none;
+            border-radius: 10px;
+            height: 100%;
+
+            &:hover
+            {
+                background-color: #1152cc;
+                color: #fff;
+                filter: brightness(1.1);
+            }
+
+            &:focus
+            {
+                background-color: #1152cc;
+                color: #fff;
+            }
+            
+            .search-btn-icon
+            {
+                display: none;
+            }
+
+
+            @media (max-width: 768px) {
+                .search-btn-text
+                {
+                    display: none;
+                }
+
+                .search-btn-icon
+                {
+                    display: block;
+                    font-size: 24px;
+                }
+            }
+        }
+        
+    }
+
+}
+

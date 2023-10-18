@@ -1,0 +1,15 @@
+.image-skeleton
+{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    width: 100%;
+    row-gap: 40px;
+    padding: 20px 0;
+
+    &__item
+    {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+}

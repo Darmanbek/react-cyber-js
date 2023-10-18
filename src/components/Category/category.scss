@@ -1,0 +1,25 @@
+.section-category
+{
+    padding: 40px 0px;
+    background-color: #f2f2f2;
+
+    .category-inner
+    {
+       
+        &__head
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+            .category-head__btns
+            {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 30px;
+            }
+        }
+
+    }
+}

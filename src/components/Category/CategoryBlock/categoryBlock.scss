@@ -1,0 +1,41 @@
+.category-block-inner
+{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    width: 100%;
+    row-gap: 40px;
+    padding: 20px 0;
+
+    &__item
+    {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+
+        .category-content
+        {
+            cursor: pointer;
+
+            &__block
+            {
+                padding: 20px;
+                border-radius: 20px;
+                overflow: hidden;
+
+                img
+                {
+                    width: 70px;
+                    height: 70px;
+                }
+            }
+
+            &__title
+            {
+                text-align: center;
+                padding: 10px 0;
+                color: #000;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.form-control
+{
+    &.grid-3
+    {
+        display: grid;
+        align-items: center;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr !important;
+    }
+
+    .select-price,
+    .phone-number
+    {
+        width: 100% !important; 
+        border-radius: 7px !important;
+        overflow: hidden !important;
+
+        .ant-select-selector
+        {
+            border-radius: 7px !important;
+        }
+
+    }
+}

@@ -1,0 +1,39 @@
+.login-block
+{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .login-inner
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        background-color: #fff;
+        border: 1px solid #ddd;
+        padding: 40px 20px;
+        border-radius: 5px;
+
+        
+        .form-item-login,
+        .form-item-pasword
+        {
+            margin: 40px 0;
+        }
+
+        .login-form
+        {
+            width: 500px;
+        }
+
+        .form-item-submit
+        {
+            display: flex;
+            justify-content: flex-end;
+            margin: 10px 20px;
+        }
+    }
+}
